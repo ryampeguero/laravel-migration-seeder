@@ -4,7 +4,7 @@
     <div class="container mt-5">
         <div class="row d-flex justify-content-center">
             <div class="col-8">
-                <table class="table">
+                <table class="table table-dark table-striped">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
