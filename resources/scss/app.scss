@@ -16,5 +16,20 @@ header {
 
 body {
     background-color: #4d7854;
-    
+
+}
+
+.ms_container {
+    position: relative;
+    top: 0;
+    left: 0;
+    max-height: 300px;
+    overflow-y: scroll;
+    border: 1px solid blue;
+
+    thead{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
 }

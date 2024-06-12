@@ -6,8 +6,10 @@ use Illuminate\Http\Request;
 
 class TrainController extends Controller
 {
+
     public function index(){
-        $trainList = Train::all();
+        // SELECT * FROM `trains` WHERE DAY(`data_partenza`) >= DAY(NOW());
+        $trainList = Train::whereRaw("DAY(data_partenza) >= DAY(NOW())")->get();
 
         return view('train', compact('trainList'));
     }
